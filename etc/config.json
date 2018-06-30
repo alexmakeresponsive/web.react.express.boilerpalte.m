@@ -1,0 +1,14 @@
+{
+  "config": {
+    "app": {
+      "port": 3000,
+      "prefix": "http//localhost:3000"
+    },
+    "db": {
+      "name": "notes",
+      "host": "localhost",
+      "port": 27017,
+      "stringConnection": "mongodb://localhost/notes"
+    }
+  }
+}
