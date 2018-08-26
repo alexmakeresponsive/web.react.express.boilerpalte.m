@@ -1,4 +1,5 @@
 import express from 'express';
+import cors from 'cors';
 import parserBody from 'body-parser';
 import { config } from '../etc/config.json';
 import * as dbUtil from './utils/db.js';
@@ -11,6 +12,7 @@ dbUtil.initConnection();
 
 
 app.use( parserBody.json() );
+app.use(cors({ origin: '*' }));
 
 
 app.get('/notes', (req, res)=>{

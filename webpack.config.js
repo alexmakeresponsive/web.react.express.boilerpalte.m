@@ -111,7 +111,7 @@ module.exports = {
 
     devServer: {
         host: 'localhost',
-        port: 9000,
+        port: 9100,
         contentBase: __dirname + '/client/',
         publicPath: '/',
         watchContentBase: true,
